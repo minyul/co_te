@@ -12,9 +12,16 @@ public class a {
 			map.put(c, map.getOrDefault(c, 0) + 1);
 		}
 
+		/**
+		 * 'a' 와 "a" 는 다르다. 주의해야한다.
+		 */
+		System.out.println(map.size());
+		map.remove('a');
+
 		int max = Integer.MIN_VALUE;
 
 		for (Character c : map.keySet()) {
+			System.out.println(c);
 			if (map.get(c) > max) {
 				max = map.get(c);
 				answer = c;
