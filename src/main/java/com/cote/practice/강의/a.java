@@ -6,13 +6,20 @@ public class a {
 
 	public static void main(String[] args) {
 		String str = "abcdd";
+		char answer = ' ';
 		HashMap<Character, Integer> map = new HashMap<>();
 		for (Character c : str.toCharArray()) {
 			map.put(c, map.getOrDefault(c, 0) + 1);
 		}
+
+		int max = Integer.MIN_VALUE;
+
 		for (Character c : map.keySet()) {
-			System.out.println(c);
-			System.out.println(map.get(c));
+			if (map.get(c) > max) {
+				max = map.get(c);
+				answer = c;
+			}
 		}
+		System.out.println(answer);
 	}
 }
