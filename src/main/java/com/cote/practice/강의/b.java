@@ -11,7 +11,7 @@ public class b {
 
 		// 길이 맞지 않으면
 		if (str1.length() != str2.length()) {
-			return answer; // 컴파일 에러 ㄱㅊ
+			//return answer; // 컴파일 에러 ㄱㅊ
 		}
 
 		// 기본으로 담아 우선
@@ -23,16 +23,16 @@ public class b {
 		for (char x : str2.toCharArray()) {
 			if (!map.containsKey(x) || 0 == map.get(x)) {
 
-				return answer;
+				//return answer;
 			}
 		}
 
 		for (char c : map.keySet()) {
 			if (0 != map.get(c)) {
 
-				return answer;
+				//return answer;
 			}
 		}
-		return "yes";
+		//return "yes";
 	}
 }
