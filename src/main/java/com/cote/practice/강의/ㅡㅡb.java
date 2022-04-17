@@ -15,5 +15,20 @@ public class ㅡㅡb {
 		for (String str : answer) {
 			System.out.println(str);
 		}
+
+		// 우리가 한번 해보자.
+		String str = "abcde"; // edcba 로!
+		int lp = 0 ;
+		int rp = str.length() - 1;
+		char[] charStr = str.toCharArray();
+		while (lp < rp) {
+			// str[lp] <-> str[rp] 바꿔야함.
+			char tempChar = charStr[lp];
+			charStr[lp] = charStr[rp];
+			charStr[rp] = tempChar;
+			lp++;
+			rp--;
+		}
+		System.out.println(charStr);
 	}
 }
