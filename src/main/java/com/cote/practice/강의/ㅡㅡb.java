@@ -29,6 +29,7 @@ public class ㅡㅡb {
 			lp++;
 			rp--;
 		}
-		System.out.println(charStr);
+		String s = String.valueOf(charStr);
+		System.out.println(s);
 	}
 }
